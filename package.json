@@ -1,0 +1,25 @@
+{
+    "name": "imagit.io",
+    "version": "1.0.0",
+    "description": "Photos'Shop",
+    "main": "index.js",
+    "scripts": {
+        "start": "node app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aldigitronapps/imagit.io.git"
+    },
+    "author": "Ike Njoku",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/aldigitronapps/imagit.io/issues"
+    },
+    "homepage": "https://github.com/aldigitronapps/imagit.io#readme",
+    "dependencies": {
+        "express": "^3.5.3",
+        "express3-handlebars": "^0.5.2",
+        "moment": "^2.18.1"
+    }
+}
