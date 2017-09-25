@@ -18,8 +18,11 @@
     },
     "homepage": "https://github.com/aldigitronapps/imagit.io#readme",
     "dependencies": {
+        "MD5": "^1.3.0",
+        "async": "^2.5.0",
         "express": "^3.5.3",
         "express3-handlebars": "^0.5.2",
-        "moment": "^2.18.1"
+        "moment": "^2.18.1",
+        "mongoose": "^4.11.12"
     }
 }

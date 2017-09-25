@@ -29,7 +29,7 @@ module.exports = function(app) {
     app.use(connect.methodOverride());
     app.use(connect.cookieParser('some-secret-value-here'));
     app.use(app.router);
-    app.use('/public/', connect.static(path.join(__dirname, '../public ')));
+    app.use('/public/', connect.static(path.join(__dirname, '../public/')));
 
     if ('development' === app.get('env')) {
         app.use(connect.errorHandler());
