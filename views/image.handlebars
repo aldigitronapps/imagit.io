@@ -13,6 +13,13 @@
             <div class="col-md-8">
                 <button class="btn btn-success" id="btn-like" data-id="{{
                 image.uniqueId }}"><i class="fa fa-heart"> Like</i></button>
+
+                <div class="col-md-4 text-right">
+                <button class="btn btn-danger" id="btn-delete" data-id="{{ image.uniqueId }}">
+                <i class="fa fa-times"></i>
+                </button>
+                </div>
+
                 <strong class="likes-count">{{ image.likes }}</strong>
                 &nbsp; - &nbsp; <i class="fa fa-eye"></i> <strong>{{ image.views }}</strong>
                 &nbsp; - &nbsp; Posted: <em class="text-muted">{{ timeago image.timestamp }}</em>
