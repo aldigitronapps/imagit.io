@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "node app.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "mocha -r tests/testhelper.js -R spec tests/**/*.test.js"
     },
     "repository": {
         "type": "git",
@@ -24,5 +24,11 @@
         "express3-handlebars": "^0.5.2",
         "moment": "^2.18.1",
         "mongoose": "^4.11.12"
+    },
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "proxyquire": "^1.8.0",
+        "sinon": "^3.0.0",
+        "sinon-chai": "^2.13.0"
     }
 }
