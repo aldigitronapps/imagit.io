@@ -12,7 +12,7 @@
         "url": "git+https://github.com/aldigitronapps/imagit.io.git"
     },
     "author": "Ike Njoku",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/aldigitronapps/imagit.io/issues"
     },
