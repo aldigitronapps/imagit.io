@@ -54,7 +54,7 @@ module.exports = {
                         ext = path.extname(req.files.file.name).toLowerCase(),
                         targetPath = path.resolve('./public/upload/' + imgUrl +
                             ext);
-                    if (ext === '.png' || ext === '.jpg' || ext === '.jpeg' || ext === '.gif') {
+                    if (ext === '.png' || ext === '.jpg' || ext === '.jpeg' || ext === '.gif' || ext === '.bmp') {
                         fs.rename(tempPath, targetPath, function(err) {
                             if (err) { throw err; }
                             // create a new Image model, populate its details:

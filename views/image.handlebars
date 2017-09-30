@@ -5,25 +5,26 @@
     <div class="panel-body">
         <p>{{ image.description }}</p>
         <div class="col-md-12 text-center">
-            <img src="/public/upload/{{image.filename}}" class="imgthumbnail">
+            <img src="/public/upload/{{image.filename}}" class="imgthumbnail img-responsive center-block">
         </div>
     </div>
     <div class="panel-footer">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 pull-left">
                 <button class="btn btn-success" id="btn-like" data-id="{{
                 image.uniqueId }}"><i class="fa fa-heart"> Like</i></button>
 
-                <div class="col-md-4 text-right">
-                <button class="btn btn-danger" id="btn-delete" data-id="{{ image.uniqueId }}">
-                <i class="fa fa-times"></i>
-                </button>
-                </div>
 
                 <strong class="likes-count">{{ image.likes }}</strong>
                 &nbsp; - &nbsp; <i class="fa fa-eye"></i> <strong>{{ image.views }}</strong>
                 &nbsp; - &nbsp; Posted: <em class="text-muted">{{ timeago image.timestamp }}</em>
             </div>
+
+                <div class="col-md-4 col-xs-12 text-center">
+                <button class="btn btn-danger" id="btn-delete" data-id="{{ image.uniqueId }}">
+                <i class="fa fa-times"></i>
+                </button>
+                </div>
         </div>
     </div>
 </div>

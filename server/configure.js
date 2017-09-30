@@ -2,7 +2,9 @@ var connect = require('connect'),
     path = require('path'),
     routes = require('./routes'),
     exphbs = require('express3-handlebars'),
+    fs = require('fs'),
     moment = require('moment');
+
 
 
 module.exports = function(app) {
@@ -36,5 +38,19 @@ module.exports = function(app) {
     }
 
     routes.initialize(app);
+    // Ensure the temporary upload folders exist
+    fs.exists(path.join(__dirname, '../public/upload/temp'),
+        function(exist) {
+            if (!exist) {
+                fs.mkdir(path.join(__dirname, '../public/upload'),
+                    function(err) {
+                        console.log(err);
+                        fs.mkdir(path.join(__dirname, '../public/upload/temp'),
+                            function(err) {
+                                console.log(err);
+                            });
+                    });
+            }
+        });
     return app;
 };

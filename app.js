@@ -7,7 +7,7 @@ var express = require('express'),
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app = config(app);
-mongoose.connect('mongodb://imagitdb:45DAF2w234$ikonicboss@candidate.15.mongolayer.com:11516,candidate.61.mongolayer.com:11135/app77922448');
+mongoose.connect('mongodb://imagit-web:45DAF2w234$ikonicboss@ds157584.mlab.com:57584/imagitdb');
 mongoose.connection.on('open', function() {
     console.log("Connected to Imagit");
 });
